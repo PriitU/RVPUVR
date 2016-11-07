@@ -5,7 +5,10 @@
 
 <body>
   <a-scene>
-
+      <a-assets>
+        <a-asset-item id="crate-obj" src="/models/crate/crate.obj"></a-asset-item>
+        <a-asset-item id="crate-mtl" src="/models/crate/crate.mtl"></a-asset-item>
+      </a-assets>
       <a-entity
           id="camera"
           camera
@@ -21,11 +24,6 @@
           mouse-cursor="">
       </a-entity>
 
-      <a-assets>
-        <a-asset-item id="crate-obj" src="/models/crate/crate.obj"></a-asset-item>
-        <a-asset-item id="crate-mtl" src="/models/crate/crate.mtl"></a-asset-item>
-      </a-assets>
-
       <a-entity id="target" geometry="primitive: box" scale="1 1 1" position="0 0 0" material="color: #cc0000"></a-entity>
       <a-entity geometry="primitive: box" scale="1 1 1" position="8 0 0" material="color: #ffffff"></a-entity>
       <a-entity geometry="primitive: box" scale="1 1 1" position="-8 0 0" material="color: #ffffff"></a-entity>
@@ -33,7 +31,6 @@
       <a-entity geometry="primitive: box" scale="1 1 1" position="-16 0 0" material="color: #ffffff"></a-entity>
 
       <a-entity obj-model="obj: #crate-obj; mtl: #crate-mtl" position="5 0 5"></a-entity>
-      <a-entity obj-model="obj: #crate-obj; mtl: #crate-mtl" position="5 2 5"></a-entity>
 
 
 
