@@ -1,0 +1,17 @@
+# Revit Wavefront OBJ Exporter 2.9.4 - (c) 2016 www.inglegreen.com
+# File Created: 08/11/2016 13:05:49
+
+newmtl Zinc/cobber
+Ka 0.0000 0.0000 0.0000
+Kd 0.309803921568627 0.32156862745098 0.313725490196078 1.0
+d 1.00
+
+newmtl Extra_solar_gain_(--59PS)
+Ka 0.0000 0.0000 0.0000
+Kd 0 0.501960784313725 0.752941176470588 1.0
+d 0.25
+
+newmtl white_paint_color_NCS_0500-N
+Ka 0.0000 0.0000 0.0000
+Kd 1 1 1 1.0
+d 1.00
