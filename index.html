@@ -1,13 +1,15 @@
 <head>
   <script src="aframe.min.js"></script>
   <script src="aframe-orbit-controls-component.js"></script>
+  <script src="aframe-gltf.js"></script>
 </head>
 
 <body>
   <a-scene>
       <a-assets>
-        <a-asset-item id="crate-obj" src="crate.obj"></a-asset-item>
-        <a-asset-item id="crate-mtl" src="crate.mtl"></a-asset-item>
+        <!--<a-asset-item id="crate-obj" src="./models/selected_family.obj"></a-asset-item>
+        <a-asset-item id="crate-mtl" src="./models/selected_family.mtl"></a-asset-item>-->
+        <a-asset-item id="model" src="./models/selected_family.gltf"></a-asset-item>
       </a-assets>
       <!--<a-entity
           id="camera"
@@ -33,13 +35,15 @@
       <!--<a-entity id="target" geometry="primitive: box" scale="1 1 1" position="0 0 0" material="color: #cc0000"></a-entity>
       <a-entity obj-model="obj: #crate-obj; mtl: #crate-mtl" position="5 0 5"></a-entity>-->
 
-      <a-entity id="target" obj-model="obj: #crate-obj; mtl: #crate-mtl" position="0 0 0"></a-entity>
-      <!--<a-entity geometry="primitive: box" scale="1 1 1" position="8 0 0" material="color: #ffffff"></a-entity>
+      <a-entity id="gltf" gltf-model="asset: #model; loop: false; auto: true;"></a-entity>
+
+      <!--<a-entity id="target" obj-model="obj: #crate-obj; mtl: #crate-mtl" position="-2 -8 -1 " rotation="0 0 0"></a-entity>
+      <a-entity geometry="primitive: box" scale="1 1 1" position="0 0 0" material="color: #000"></a-entity>
       <a-entity geometry="primitive: box" scale="1 1 1" position="-8 0 0" material="color: #ffffff"></a-entity>
       <a-entity geometry="primitive: box" scale="1 1 1" position="16 0 0" material="color: #ffffff"></a-entity>
       <a-entity geometry="primitive: box" scale="1 1 1" position="-16 0 0" material="color: #ffffff"></a-entity>-->
 
-      <a-sky color="#000000"></a-sky>
+      <a-sky color="#000"></a-sky>
 
   </a-scene>
 </body>
