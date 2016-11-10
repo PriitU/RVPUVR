@@ -15,7 +15,7 @@ AFRAME.registerComponent('cursor-listener', {
 
 //console.log(THREE);
 
-var objekt = document.querySelector('a-box');
+var objekt = document.querySelector('#target1');
 var rotX;
 var rotY;
 //console.log(objekt.getAttribute('rotation'));
@@ -26,15 +26,17 @@ var cam = document.querySelector('a-entity[camera]');
 var scene = document.querySelector('a-scene');
 //var cylinder = document.createElement('a-cylinder');
 var text = document.createElement('a-entity');
-text.setAttribute('bmfont-text',"text: HELLO!; color: #FFF")
-text.setAttribute('position',"1 0 1")
-scene.appendChild(text);
+
+//text.setAttribute('bmfont-text',"text: HELLO!; color: #FFF")     -- text element
+//text.setAttribute('position',"1 0 1")
+//scene.appendChild(text);
+
 //cylinder.setAttribute('color', '#FF9500');
 //cylinder.setAttribute('height', '2');
 //cylinder.setAttribute('radius', '0.75');
 //cylinder.setAttribute('position', '3 1 0');
 //scene.appendChild(cylinder);
-  console.log(cam.far);
+//console.log(cam.far);
 var t = 0;
 function render() {
   t += 0.01;
