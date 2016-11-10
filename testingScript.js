@@ -18,6 +18,7 @@ AFRAME.registerComponent('cursor-listener', {
 var objekt = document.querySelector('#target1');
 var rotX;
 var rotY;
+
 //console.log(objekt.getAttribute('rotation'));
 //objekt.setAttribute("rotation", "0 45 0");
 //console.log(objekt.getAttribute('rotation').y);
