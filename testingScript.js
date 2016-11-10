@@ -15,7 +15,7 @@ AFRAME.registerComponent('cursor-listener', {
 
 //console.log(THREE);
 
-var objekt = document.querySelector('#target1');
+var objekt = document.querySelector('a-box');
 var rotX;
 var rotY;
 
