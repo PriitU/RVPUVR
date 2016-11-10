@@ -1,18 +1,21 @@
 <head>
   <script src="aframe.min.js"></script>
   <script src="aframe-orbit-controls-component.js"></script>
-  <script>console.log(THREE);</script>
+  <script src="https://rawgit.com/bryik/aframe-bmfont-text-component/master/dist/aframe-bmfont-text-component.min.js"></script>
+
 </head>
 
 <body>
   <a-scene>
+      <!--<a-entity id="info" bmfont-text="text: HELLO!; color: #FFF" position="0 2 0"></a-entity>-->
       <a-assets>
         <a-asset-item id="crate-obj" src="crate.obj"></a-asset-item>
         <a-asset-item id="crate-mtl" src="crate.mtl"></a-asset-item>
       </a-assets>
+<!--
       <a-entity
           id="camera"
-          camera
+          camera="active:false"
           position="0 0 5"
           orbit-controls="
               enabled: true;
@@ -26,11 +29,16 @@
               maxDistance:40;"
           mouse-cursor="">
       </a-entity>
+-->
+      <a-entity
+          id="camera"
+          camera="active:true"
+          position="5 5 5"
+          look-controls
+          mouse-cursor="">
+          <a-box position="0 0 -2" rotation="0 0 0" width="1" height="1" depth="1" color="#4CC3D9"></a-box>
+      </a-entity>
 
-
-
-      <!--<a-entity id="target" geometry="primitive: box" scale="1 1 1" position="0 0 0" material="color: #cc0000"></a-entity>
-      <a-entity obj-model="obj: #crate-obj; mtl: #crate-mtl" position="5 0 5"></a-entity>-->
 
       <a-entity id="target" obj-model="obj: #crate-obj; mtl: #crate-mtl" position="0 0 0"></a-entity>
       <!--<a-entity geometry="primitive: box" scale="1 1 1" position="8 0 0" material="color: #ffffff"></a-entity>
@@ -38,7 +46,9 @@
       <a-entity geometry="primitive: box" scale="1 1 1" position="16 0 0" material="color: #ffffff"></a-entity>
       <a-entity geometry="primitive: box" scale="1 1 1" position="-16 0 0" material="color: #ffffff"></a-entity>-->
 
-      <a-sky color="#000000"></a-sky>
+      <a-sky color="#000"></a-sky>
 
   </a-scene>
+  <script src="testingScript.js"></script>
+
 </body>
