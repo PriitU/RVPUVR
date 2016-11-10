@@ -44,7 +44,7 @@ function render() {
   rotY = document.querySelector('a-entity[camera]').getAttribute('rotation').y;
 
   //console.log(rotX);
-  objekt.setAttribute("rotation", (0-rotX) +" "+ (0-rotY) +" 0");
+  objekt.setAttribute("rotation", (rotX) +" "+ (rotY) +" 0");
   //text.setAttribute('bmfont-text', "text: "+(Math.sin(t*2)+1)+"; color: #FFF");     -- this prints new text at every frame
 }
 render();
